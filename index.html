@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the required information to proceed forward</p>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label id="name-label"> Your Full Name:<input type="text" id="name" name="name-label" placeholder="Jeff..." required></label>
+        <label id="email-label"> Your Email:<input type="email" id="email" name="email-label" placeholder="abcd@gmail.com..." required></label>
+        <label id="number-label"> Your Age:<input type="number" id="number" name="number" min="15" max="90" placeholder="15" required></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Location:
+          <select id="dropdown" name="location" required>
+            <option value="">(select one)</option>
+            <option value="1">Asia</option>
+            <option value="2">North/South America</option>
+            <option value="3">Europe</option>
+            <option value="4">Australia</option>
+            </select>
+            </label>
+            <label for="front-end"><input type="radio" id="front-end" class="inline" name="position" value="front-end">Front-End</label>
+             <label for="back-end"><input type="radio" id="back-end" class="inline" name="position" value="back-end">Back-End</label>
+              <label for="full-stack"><input type="radio" id="full-stack" class="inline" name="position" value="full-stack">Full Stack</label>
+              What would you like to see added:
+    <label for="tutorials"><input type="checkbox" id="tutorials" name="tutorials" class="inline" value="tutorials">Tutorials</label>
+    <label for="challenges"><input type="checkbox" id="challenges" name="challenges" class="inline" value="challenges"> Challenges</label>
+            <label for="bio"> Tell us about yourself:<textarea id="bio" rows="3" cols="30" placeholder="I am a junior dev..."></textarea>
+            </label>
+        </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+ </body>
+</html>
